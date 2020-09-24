@@ -1,0 +1,37 @@
+body {
+  background-color: #bafdff;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+.subtitulo-wuju {
+  color: green;
+  font-size: 20px;
+}
+
+.subtitulo-yei {
+  color: red;
+  font-size: 35px;
+}
+
+p {
+  /* color: green; */
+  /* color: #440088; */
+  color: rgb(255, 0, 255);
+}
+
+img {
+  border: 2px solid purple;
+  border-radius: 20px;
+}
+
+.imagen-chica {
+  width: 150px;
+}
+
+.imagen-grande {
+  width: 400px;
+}
