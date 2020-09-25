@@ -1,0 +1,77 @@
+/* Una forma de verificar que nuestro css está conectado al HTML adecuadamente
+es poniendo una propiedad de fondo a todos los elementos usando el selector *
+
+* {
+  background: red;
+} */
+
+.caja-1 {
+  border: 2px solid red;
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  color: white;
+
+  /* Padding empuja hacia adentro */
+
+  /* padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px; */
+
+  /* Esto le agrega padding a todos los lados */
+  /* padding: 20px; */
+
+  /* Los primeros dos valores agregan padding en Y (arriba y abajo) y los segundos en X (izquierda y derecha) */
+  /* padding: 20px 50px; */
+
+  /* orden de los lados (padding/margin) arriba - derecha - abajo - izquierda:  */
+  padding: 10px 30px 40px 50px;
+
+  /* margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px; */
+
+  /* margin: 30px; */
+
+  margin: 20px 50px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px black;
+  text-align: center;
+}
+
+.caja-2 {
+  border: 4px dashed purple;
+  background-color: pink;
+  color: white;
+  padding: 20px;
+  margin: 30px;
+  height: 200px;
+  width: 50%;
+  border-radius: 15px;
+  font-weight: bold;
+  box-shadow: 10px 10px 5px black;
+  text-align: center;
+}
+
+.tarjeta {
+  height: 350px;
+  width: 350px;
+  border: 2px dotted purple;
+  border-radius: 20px;
+  text-align: center;
+  margin: 25px;
+  box-shadow: 10px 10px 10px black;
+}
+
+.imagen {
+  width: 180px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.texto {
+  padding: 5px 5px;
+  text-align: left;
+}
