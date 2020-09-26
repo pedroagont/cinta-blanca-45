@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
+}
+
+/* HEADER */
+
+header nav {
+  padding-top: 20px;
+  float: right;
+}
+
+header nav img {
+  width: 40px;
+  vertical-align: middle;
+}
+
+header nav a {
+  padding: 0 5px;
+}
+
+.foto-perfil {
+  border-radius: 20px;
+}
+
+/* MAIN */
+
+main div {
+  text-align: center;
+}
+
+main div img {
+  display: block;
+  width: 20%;
+  margin: 0 40%;
+  padding-top: 170px;
+  padding-bottom: 30px;
+}
+
+main input {
+  width: 45%;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid #cccccc;
+  font-size: 15px;
+
+  /* CÓMO AGREGO EL MICRÓFONO? */
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/712px-Google_mic.svg.png);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-origin: content-box;
+}
+
+main input:focus {
+  outline: none;
+  box-shadow: 0.5px 0.5px 1px;
+}
+
+main input:hover {
+  box-shadow: 0.5px 0.5px 2px;
+}
+
+main .botones {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+main button {
+  padding: 12px 15px;
+  margin: 0 5px;
+  border: 1px solid #efefef;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+main button:hover {
+  border: 1px solid grey;
+  box-shadow: 0.5px 0.5px 1px;
+}
+
+a.espanol {
+  color: blue;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 130px;
+  background-color: #e6e6e6;
+  height: 110px;
+}
+
+footer hr {
+  margin-top: 0;
+}
+
+footer a {
+  padding: 13px;
+}
+
+footer .mexico {
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+footer .pie-izquierdo {
+  float: left;
+}
+
+footer .pie-derecho {
+  float: right;
+}
