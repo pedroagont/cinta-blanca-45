@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap GRID</title>
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+<body>
+
+  <h1>Bootstrap GRID 🏗</h1>
+
+  <!-- Link de referencia Bootstrap: https://getbootstrap.com/docs/4.5/layout/grid/ -->
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-sm bg-primary">
+        One of three columns
+      </div>
+      <div class="col-sm bg-success">
+        One of three columns
+      </div>
+      <div class="col-sm bg-danger">
+        One of three columns
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm bg-secondary">
+        One of three columns
+      </div>
+      <div class="col-sm bg-info">
+        One of three columns
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm bg-primary">
+        One of three columns
+      </div>
+      <div class="col-sm bg-success">
+        One of three columns
+      </div>
+      <div class="col-sm bg-danger">
+        One of three columns
+      </div>
+      <div class="col-sm bg-warning">
+        One of three columns
+      </div>
+    </div>
+  </div>
+
+  <!-- AJATO EMMET: div.container>div.row TAB -->
+  <div class="container my-5">
+      <div class="row">
+        <!-- ATAJAO EMMET div.col*13 TAB -->
+        <div class="col-12 bg-primary">0</div>
+        <div class="col-1 bg-secondary">1</div>
+        <div class="col-1 bg-success">2</div>
+        <div class="col-1 bg-danger">3</div>
+        <div class="col-1 bg-warning">4</div>
+        <div class="col-1 bg-info">5</div>
+        <div class="col-1 bg-light">6</div>
+        <div class="col-1 bg-secondary">7</div>
+        <div class="col-1 bg-success">8</div>
+        <div class="col-1 bg-danger">9</div>
+        <div class="col-1 bg-warning">10</div>
+        <div class="col-1 bg-info">11</div>
+        <div class="col-1 bg-light">12</div>
+      </div>
+  </div>
+
+  <!-- Sistema GRID de Bootstrap acepta máximo 12 columnas
+  col-xs-X -> xs de extrasmall - En pantallas extrapequeñas mide X columnas
+  col-sm-X -> sm de small - En pantallas pequeñas mide X columnas
+  col-md-X -> md de medium - En pantallas medianas mide X columnas
+  col-lg-X -> lg de large - En pantallas largas mide X columnas
+  col-xl-X -> xl de extralarge - En pantallas extragrandes mide X columnas -->
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 bg-success">Un texto</div>
+      <div class="col-md-2 col-sm-8 bg-danger">Otro texto</div>
+      <div class="col-md-4 col-sm-6 bg-warning">Más texto</div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-12 bg-primary">0</div>
+          <div class="col-1 bg-secondary">1</div>
+          <div class="col-1 bg-success">2</div>
+          <div class="col-1 bg-danger">3</div>
+          <div class="col-1 bg-warning">4</div>
+          <div class="col-1 bg-info">5</div>
+          <div class="col-1 bg-light">6</div>
+          <div class="col-1 bg-secondary">7</div>
+          <div class="col-1 bg-success">8</div>
+          <div class="col-1 bg-danger">9</div>
+          <div class="col-1 bg-warning">10</div>
+          <div class="col-1 bg-info">11</div>
+          <div class="col-1 bg-light">12</div>
+
+          <div class="col-md-6 col-sm-12 bg-success">Un texto</div>
+          <div class="col-md-2 col-sm-8 bg-danger">Texto</div>
+          <div class="col-md-4 col-sm-6 bg-warning">Más texto</div>
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-12 bg-dark">0</div>
+          <div class="col-1 bg-secondary">1</div>
+          <div class="col-1 bg-success">2</div>
+          <div class="col-1 bg-danger">3</div>
+          <div class="col-1 bg-warning">4</div>
+          <div class="col-1 bg-info">5</div>
+          <div class="col-1 bg-light">6</div>
+          <div class="col-1 bg-secondary">7</div>
+          <div class="col-1 bg-success">8</div>
+          <div class="col-1 bg-danger">9</div>
+          <div class="col-1 bg-warning">10</div>
+          <div class="col-1 bg-info">11</div>
+          <div class="col-1 bg-light">12</div>
+
+          <div class="col-md-4 col-sm-8 bg-success">Un texto</div>
+          <div class="col-md-4 col-sm-9 bg-danger">Otro texto</div>
+          <div class="col-md-4 col-sm-5 bg-warning">Más texto</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row justify-content-around my-2">
+      <div class="col-md-2 col-sm-6 bg-primary">Recuerden</div>
+      <div class="col-md-2 col-sm-6 bg-info">Escribir bien</div>
+      <div class="col-md-2 col-sm-6 bg-secondary">Sus clases</div>
+    </div>
+    <div class="row justify-content-between my-2">
+      <div class="col-md-2 col-sm-6 bg-primary">Recuerden</div>
+      <div class="col-md-2 col-sm-6 bg-info">Escribir bien</div>
+      <div class="col-md-2 col-sm-6 bg-secondary">Sus clases</div>
+    </div>
+    <div class="row justify-content-end my-2">
+      <div class="col-md-2 col-sm-6 bg-primary">Recuerden</div>
+      <div class="col-md-2 col-sm-6 bg-info">Escribir bien</div>
+      <div class="col-md-2 col-sm-6 bg-secondary">Sus clases</div>
+    </div>
+  </div>
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>
