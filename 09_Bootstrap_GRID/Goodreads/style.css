@@ -1,0 +1,22 @@
+header nav {
+  background-color: #f4f2e9;
+}
+
+main {
+  background-image: url('https://s.gr-assets.com/assets/home/masthead_background.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 110%;
+}
+
+main .container {
+  background-color: #f4f2e9;
+}
+
+.container p {
+  font-size: 10px;
+}
+
+footer {
+  background-color: #f4f2e9;
+}
