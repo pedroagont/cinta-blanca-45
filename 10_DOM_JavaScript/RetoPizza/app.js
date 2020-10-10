@@ -40,8 +40,6 @@ const generarOrden = () => {
     alert('El campo de dirección está vacío')
   } if (telefono.value === '') {
     alert('El campo de teléfono está vacío')
-  } if (pina.value === '') {
-    alert('El campo de ingredientes está vacío')
   } else {
     // Respuestas cambien por lo ingresado por los usuarios en los inputs
     respuestaNombre.innerHTML = nombre.value;
@@ -49,19 +47,14 @@ const generarOrden = () => {
     respuestaTelefono.innerHTML = telefono.value;
     pedido.innerHTML = pina.value;
 
-    const valorPina = pina.value.toLowerCase();
-
-    if(valorPina === 'si') {
+    if(pina.checked) {
       pedido.innerHTML = 'Pizza CON piña';
       imagen.src = 'https://irecetasfaciles.com/wp-content/uploads/2020/03/pizza-hawaiana.jpg';
       progress.style.width = '25%';
-    } else if (valorPina === 'no') {
+    } else {
       pedido.innerHTML = 'Pizza SIN piña';
       imagen.src = 'https://www.recetin.com/wp-content/uploads/2012/01/pizza_cuatro_quesos.jpg';
       progress.style.width = '25%';
-    } else {
-      pedido.innerHTML = 'El usuario no indicó su pedido';
-      imagen.src = 'https://i.ytimg.com/vi/topx1wv_Qzw/hqdefault.jpg';
     }
 
     card.style.display = '';
