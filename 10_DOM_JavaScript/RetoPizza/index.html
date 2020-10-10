@@ -34,9 +34,13 @@
     </div>
     <div class="input-group mb-3">
       <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">Con piña?</span>
+        <label class="input-group-text" for="pina">Ingredientes</label>
       </div>
-      <input id="pina" type="text" class="form-control" placeholder="Con piña o sin piña?" aria-label="Con piña?" aria-describedby="basic-addon1">
+      <select class="custom-select" id="pina">
+        <option selected disabled value="">Elige una opción...</option>
+        <option value="si">Con piña</option>
+        <option value="no">Sin piña</option>
+      </select>
     </div>
     <button id="boton" type="button" class="btn btn-primary">Ordenar</button>
   </div>
