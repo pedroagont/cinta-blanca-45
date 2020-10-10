@@ -19,50 +19,23 @@ const telefono = document.getElementById('telefono');
 const pina = document.getElementById('pina');
 const boton = document.getElementById('boton');
 
-// RESPUESTAS
-const respuestaNombre = document.getElementById('respuestaNombre');
-const respuestaDireccion = document.getElementById('respuestaDireccion');
-const respuestaTelefono = document.getElementById('respuestaTelefono');
-const pedido = document.getElementById('pedido');
-const progress = document.getElementById('progress');
-const imagen = document.getElementById('imagen');
-
-const card = document.getElementById('card');
-const spinner = document.getElementById('spinner');
-card.style.display = 'none';
-
 // Paso 2: Declarar la función que generará la card con las entradas del usuario
 const generarOrden = () => {
 
   // Validar que ningún campo esté vacío
-  if (nombre.value === '') {
+  if (nombre.value === '' || direccion.value === '' || telefono.value === '') {
     alert('El campo de nombre está vacío')
-  } else if (direccion.value === '') {
-    alert('El campo de dirección está vacío')
-  } if (telefono.value === '') {
-    alert('El campo de teléfono está vacío')
+  } else if (pina.checked) {
+    // window.location.href hace referencia a la dirección web o URL
+    // Colocamos en la url la dirección del nuevo html y le concatenamos los valores de los inputs como parámetros en la url
+    // Los parámetros inician con el caracter de interrogación (?) se declaran con igual (=) se separan con y/ampersand (&)
+    window.location.href = 'pedido.html?nombre=' + nombre.value + '&direccion=' + direccion.value + '&telefono=' + telefono.value + '&pina=' + true;
   } else {
-    // Respuestas cambien por lo ingresado por los usuarios en los inputs
-    respuestaNombre.innerHTML = 'Nombre: ' + nombre.value;
-    respuestaDireccion.innerHTML = 'Dirección: ' + direccion.value;
-    respuestaTelefono.innerHTML = 'Teléfono: ' + telefono.value;
-    pedido.innerHTML = pina.value;
-
-    if(pina.checked) {
-      pedido.innerHTML = 'Pizza CON piña';
-      imagen.src = 'https://irecetasfaciles.com/wp-content/uploads/2020/03/pizza-hawaiana.jpg';
-      progress.style.width = '25%';
-    } else {
-      pedido.innerHTML = 'Pizza SIN piña';
-      imagen.src = 'https://www.recetin.com/wp-content/uploads/2012/01/pizza_cuatro_quesos.jpg';
-      progress.style.width = '25%';
-    }
-
-    card.style.display = '';
-    spinner.style.display = 'none';
-
-    console.log('Orden generada');
+    window.location.href = 'pedido.html?nombre=' + nombre.value + '&direccion=' + direccion.value + '&telefono=' + telefono.value + '&pina=' + false;
   }
+
+  console.log('Orden generada');
+
 }
 
 
