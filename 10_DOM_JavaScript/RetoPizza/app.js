@@ -28,6 +28,7 @@ const progress = document.getElementById('progress');
 const imagen = document.getElementById('imagen');
 
 const card = document.getElementById('card');
+const spinner = document.getElementById('spinner');
 card.style.display = 'none';
 
 // Paso 2: Declarar la función que generará la card con las entradas del usuario
@@ -42,9 +43,9 @@ const generarOrden = () => {
     alert('El campo de teléfono está vacío')
   } else {
     // Respuestas cambien por lo ingresado por los usuarios en los inputs
-    respuestaNombre.innerHTML = nombre.value;
-    respuestaDireccion.innerHTML = direccion.value;
-    respuestaTelefono.innerHTML = telefono.value;
+    respuestaNombre.innerHTML = 'Nombre: ' + nombre.value;
+    respuestaDireccion.innerHTML = 'Dirección: ' + direccion.value;
+    respuestaTelefono.innerHTML = 'Teléfono: ' + telefono.value;
     pedido.innerHTML = pina.value;
 
     if(pina.checked) {
@@ -58,6 +59,7 @@ const generarOrden = () => {
     }
 
     card.style.display = '';
+    spinner.style.display = 'none';
 
     console.log('Orden generada');
   }
