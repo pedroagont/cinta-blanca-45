@@ -10,7 +10,53 @@
 </head>
 <body>
 
-  <h1>Reto Pizza 🍕</h1>
+  <h1 class="text-center m-5">Reto Pizza 🍕</h1>
+
+  <!-- INPUTS -->
+  <div class="container my-5">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Nombre</span>
+      </div>
+      <input id="nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Direccion</span>
+      </div>
+      <input id="direccion" type="text" class="form-control" placeholder="Direccion" aria-label="Direccion" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Teléfono</span>
+      </div>
+      <input id="telefono" type="text" class="form-control" placeholder="Teléfono" aria-label="Teléfono" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Con piña?</span>
+      </div>
+      <input id="pina" type="text" class="form-control" placeholder="Con piña o sin piña?" aria-label="Con piña?" aria-describedby="basic-addon1">
+    </div>
+    <button id="boton" type="button" class="btn btn-primary">Ordenar</button>
+  </div>
+
+  <!-- CARD/REPUESTAS -->
+  <div class="container my-5">
+    <div class="card w-75 mx-auto" id="card">
+      <img id="imagen" src="https://www.menuspararestaurantes.com/wp-content/uploads/2015/10/mesero-altamente-efectivo.jpg" class="card-img-top" alt="mesera">
+      <div class="card-body">
+        <h5 class="card-title" id="pedido">Pedido</h5>
+        <p class="card-text" id="respuestaNombre">Nombre</p>
+        <p class="card-text" id="respuestaDireccion">Direccion</p>
+        <p class="card-text" id="respuestaTelefono">Teléfono</p>
+        <p class="card-text font-weight-bold">Su orden está en proceso</p>
+        <div class="progress">
+          <div id="progress" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="app.js" charset="utf-8"></script>
 
